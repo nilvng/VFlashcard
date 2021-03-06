@@ -11,17 +11,6 @@ class QuizViewController: UIViewController {
     @IBOutlet var questionLabel : UILabel!
     @IBOutlet var answerLabel : UILabel!
     
-    let questions : [String] = [
-        "PWA",
-    "viewDidLoad()",
-    "run simulator?"]
-    
-    let answers : [String] = [
-    "have a native-app feeling, it can be used offline, and sync data later",
-        "after the app launched, it will show the landing state of the app",
-        "cmd + R"
-    ]
-    
     var flashcardStore : FlashcardStore!
     
     var currentQuesIndex = 0
