@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Flashcard {
+class Flashcard: Equatable {
     var keyword: String
     var hint : String
     var moreDetail : String?
@@ -49,5 +49,13 @@ class Flashcard {
             self.init(keyword: "", hint: "", moreDetail: nil)
         }
     }
+    
+    static func == (lhs: Flashcard, rhs: Flashcard) -> Bool {
+        return lhs.keyword == rhs.keyword &&
+            lhs.dateTested == rhs.dateTested &&
+            lhs.hint == rhs.hint &&
+            lhs.level == rhs.level
+    }
+
     
 }

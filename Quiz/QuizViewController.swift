@@ -14,27 +14,25 @@ class QuizViewController: UIViewController {
     var flashcardStore : FlashcardStore!
     
     var currentQuesIndex = 0
+    var currentCard = Flashcard()
     
     @IBAction func showNextQuestion(_ sender : UIButton) {
         currentQuesIndex += 1
         if (currentQuesIndex == flashcardStore.allFlashcards.count){
             currentQuesIndex = 0
         }
-        let currentCard = flashcardStore.allFlashcards[currentQuesIndex]
+        self.currentCard = flashcardStore.allFlashcards[currentQuesIndex]
         questionLabel.text = currentCard.keyword
         answerLabel.text = "???"
     }
     
     @IBAction func showAnswer(_ sender : UIButton ){
-        let currentCard = flashcardStore.allFlashcards[currentQuesIndex]
         answerLabel.text = currentCard.hint
         
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let currentCard = flashcardStore.allFlashcards[currentQuesIndex]
-        questionLabel.text = currentCard.keyword
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        questionLabel.text = flashcardStore.allFlashcards[currentQuesIndex].keyword
     }
 }
 

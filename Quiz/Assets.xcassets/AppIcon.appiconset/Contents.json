@@ -11,6 +11,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "Quiz-58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
@@ -21,6 +22,7 @@
       "size" : "29x29"
     },
     {
+      "filename" : "Quiz-80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
@@ -37,6 +39,7 @@
       "size" : "60x60"
     },
     {
+      "filename" : "Quiz-180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -78,6 +81,7 @@
       "size" : "76x76"
     },
     {
+      "filename" : "Quiz-152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"

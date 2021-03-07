@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C847ADED25F47D7F00551D11 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847ADEC25F47D7F00551D11 /* CardsViewController.swift */; };
+		C847ADF025F4D14100551D11 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847ADEF25F4D14100551D11 /* CardDetailViewController.swift */; };
 		C870451225D3B446008EF654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C870451125D3B446008EF654 /* AppDelegate.swift */; };
 		C870451425D3B446008EF654 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C870451325D3B446008EF654 /* SceneDelegate.swift */; };
 		C870451625D3B446008EF654 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C870451525D3B446008EF654 /* QuizViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C847ADEC25F47D7F00551D11 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		C847ADEF25F4D14100551D11 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		C870450E25D3B446008EF654 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C870451125D3B446008EF654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C870451325D3B446008EF654 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				C870451F25D3B447008EF654 /* Info.plist */,
 				C8FDEF9325F3CA6000FE1EB1 /* Flashcard.swift */,
 				C8FDEF9625F3CF3900FE1EB1 /* FlashcardStore.swift */,
+				C847ADEC25F47D7F00551D11 /* CardsViewController.swift */,
+				C847ADEF25F4D14100551D11 /* CardDetailViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -145,9 +151,11 @@
 			files = (
 				C8FDEF9725F3CF3900FE1EB1 /* FlashcardStore.swift in Sources */,
 				C870451625D3B446008EF654 /* QuizViewController.swift in Sources */,
+				C847ADED25F47D7F00551D11 /* CardsViewController.swift in Sources */,
 				C870451225D3B446008EF654 /* AppDelegate.swift in Sources */,
 				C8FDEF9425F3CA6000FE1EB1 /* Flashcard.swift in Sources */,
 				C870451425D3B446008EF654 /* SceneDelegate.swift in Sources */,
+				C847ADF025F4D14100551D11 /* CardDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
