@@ -11,17 +11,18 @@ class FlashcardStore {
     
     var allFlashcards = [Flashcard]()
     
-    init(no : Int) {
-        for _ in 0..<no {
-            createFlashcard()
-        }
-        print(allFlashcards)
-    }
-    
     @discardableResult func createFlashcard() -> Flashcard {
         let flashcard = Flashcard(random: true)
         allFlashcards.append(flashcard)
         return flashcard
     }
     
+    func moveCard (fromRow : Int, toRow : Int){
+        if fromRow == toRow {
+            return
+        }
+        let movedCard = allFlashcards[fromRow]
+        allFlashcards.remove(at: fromRow)
+        allFlashcards.insert(movedCard, at: toRow)
+    }
 }

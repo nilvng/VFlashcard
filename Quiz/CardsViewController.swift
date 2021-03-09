@@ -10,6 +10,11 @@ import UIKit
 class CardsViewController : UITableViewController {
     var flashcardStore : FlashcardStore!
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        navigationItem.rightBarButtonItem = editButtonItem
+    }
+    
     @IBAction func addNewCard (_ button : UIBarItem) {
         print("added card!")
         let newCard = flashcardStore.createFlashcard()
@@ -47,5 +52,10 @@ class CardsViewController : UITableViewController {
         cell.detailTextLabel?.text = "\(card.level)"
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+        flashcardStore.moveCard(fromRow: sourceIndexPath.row, toRow: destinationIndexPath.row)
     }
 }

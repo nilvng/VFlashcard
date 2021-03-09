@@ -56,11 +56,14 @@
                                 <action selector="addNewCard:" destination="Hli-v3-zPF" id="rhT-Ze-MBG"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Quiz" id="s6B-f8-UHp">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="takeQuiz" id="IkI-zu-TWO"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="Gy4-pS-6Eb"/>
+                            <barButtonItem title="Quiz" id="s6B-f8-UHp">
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="takeQuiz" id="IkI-zu-TWO"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQe-hW-gxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

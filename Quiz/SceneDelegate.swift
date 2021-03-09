@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         let navVC = window!.rootViewController as! UINavigationController
         let  cardVC = navVC.topViewController as! CardsViewController
-        let flashcardStore = FlashcardStore(no: 3)
+        let flashcardStore = FlashcardStore()
         
         cardVC.flashcardStore = flashcardStore
     }
