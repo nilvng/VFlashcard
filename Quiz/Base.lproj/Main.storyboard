@@ -114,35 +114,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2m8-Wc-WCm">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2m8-Wc-WCm">
                                 <rect key="frame" x="0.0" y="96" width="414" height="758"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wne-hA-yDW">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="173.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="143.5"/>
                                         <state key="normal" title="Next Question"/>
                                         <connections>
                                             <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dR-eb-bE4"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbA-wU-bEX">
-                                        <rect key="frame" x="0.0" y="183.5" width="414" height="118.5"/>
+                                        <rect key="frame" x="0.0" y="153.5" width="414" height="143.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLP-F2-aiK">
-                                        <rect key="frame" x="0.0" y="312" width="414" height="119"/>
+                                        <rect key="frame" x="0.0" y="307" width="414" height="144"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB4-h8-U7r">
-                                        <rect key="frame" x="0.0" y="441" width="414" height="317"/>
+                                        <rect key="frame" x="0.0" y="461" width="414" height="143.5"/>
                                         <state key="normal" title="Show Answer"/>
                                         <connections>
                                             <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U87-cY-dWZ"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-ev-Ezi">
+                                        <rect key="frame" x="0.0" y="614.5" width="414" height="143.5"/>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -158,6 +161,7 @@
                     <navigationItem key="navigationItem" title="Quiz" id="0Ee-FH-KFh"/>
                     <connections>
                         <outlet property="answerLabel" destination="BLP-F2-aiK" id="NbB-5o-uWG"/>
+                        <outlet property="buttonsStackView" destination="Gad-ev-Ezi" id="lx9-hR-GvI"/>
                         <outlet property="questionLabel" destination="qbA-wU-bEX" id="vgd-98-Vro"/>
                     </connections>
                 </viewController>

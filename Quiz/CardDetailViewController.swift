@@ -8,14 +8,16 @@
 import UIKit
 
 class CardDetailViewController: UIViewController {
+    
+    @IBOutlet var keywordLabel: UILabel!
+    @IBOutlet var hintLabel: UILabel!
+    
+    
     var card : Flashcard! {
         didSet{
             navigationItem.title = card.keyword
         }
     }
-    
-    @IBOutlet var keywordLabel: UILabel!
-    @IBOutlet var hintLabel: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         keywordLabel.text = card.keyword

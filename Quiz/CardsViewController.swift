@@ -15,6 +15,12 @@ class CardsViewController : UITableViewController {
         navigationItem.rightBarButtonItem = editButtonItem
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
+    }
+
     @IBAction func addNewCard (_ button : UIBarItem) {
         print("added card!")
         let newCard = flashcardStore.createFlashcard()

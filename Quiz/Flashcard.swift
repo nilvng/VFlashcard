@@ -12,12 +12,7 @@ class Flashcard: Equatable {
     var moreDetail : String?
     var dateTested : Date
     var level : Level
-    
-    enum Level {
-        case hard
-        case medium
-        case easy
-    }
+
     init(keyword : String, hint : String, moreDetail : String?, level: Level = Level.hard) {
         self.keyword = keyword
         self.hint = hint
@@ -58,4 +53,11 @@ class Flashcard: Equatable {
     }
 
     
+}
+
+
+enum Level : String {
+    case hard = "Hard (<30%)"
+    case medium = "Medium (50%)"
+    case easy = "Easy (>80%)"
 }
